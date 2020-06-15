@@ -2,6 +2,45 @@
  * Your code here!
  ******************************************************************************/
 
+function getInput(n) {
+  return process.argv[n + 2];
+}
+//--the 'input' variable below stores the return value into a variable.--
+let input = getInput(0)
+console.log(input)
+
+
+function divisible() {
+  if (input % 15 === 0){
+    console.log('FizzBuzz');
+ } else if (input % 5 === 0){
+    console.log('Buzz');
+ } else if (input % 3 === 0){
+    console.log('Fizz');
+} else {
+    console.log(input);
+} 
+
+
+}
+//other ways to write the solution?
+// if ([input % 3] === 0){
+//   return 'Fizz';
+//   } else if ([input % 5] === 0){
+//     return 'Buzz';
+//   } else if ([input % 3] === 0  && [input % 5] === 0){
+//     return 'FizzBuzz';
+
+// if ([input % 3] === 0  && [input % 5] === 0){
+//   return 'FizzBuzz';
+//   } else if ([input % 5] === 0){
+//     return 'Buzz';
+//   } else if ([input % 3] === 0){
+//     return 'Fizz';
+//   } else{
+//     return input;
+
+
 
 
 
